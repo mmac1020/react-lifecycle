@@ -1,0 +1,21 @@
+#app > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0.5em;
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 40%;
+  border-radius: 10em;
+  margin-right: 10em;
+}
+
+body {
+  background-color: gold;
+}

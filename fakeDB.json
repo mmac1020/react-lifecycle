@@ -1,0 +1,36 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Garchomp",
+      "number": 445,
+      "type1": "Dragon",
+      "type2": "Ground", 
+      "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/445.png"
+    },
+    {
+      "id": 2,
+      "name": "Umbreon",
+      "number": 197, 
+      "type1": "Dark",
+      "type2": "None",
+      "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png"
+    },
+    {
+      "id": 3,
+      "name": "Sylveon",
+      "number": 700,
+      "type1": "Fairy",
+      "type2": "None",
+      "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/700.png"
+    },
+    {
+      "id": 4,
+      "name": "Lucario",
+      "number": 448,
+      "type1": "Fighting",
+      "type2": "Steel",
+      "imageUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/448.png"
+    }
+  ]
+}
