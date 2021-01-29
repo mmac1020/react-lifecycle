@@ -42,7 +42,7 @@ class Pokemon extends Component {
     This is a good place to clean up any subscriptions or event listeners
     that may have been initialized
   */
-  async componentWillUnmount() {
+  componentWillUnmount() {
     console.log('---------Called from the componentWillUnMount--------')
     // Removing the interval we set up in componentDidMount
     clearInterval(this.annoyingInterval)
