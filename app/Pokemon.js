@@ -6,23 +6,15 @@ import axios from 'axios'
 class Pokemon extends Component {
   constructor(props) {
     console.log('---------Called from the constructor--------')
-    // super keyword is used to access and call functions in object's parent
-		// Do you need to pass props? Technically, not all the time
-		// Because React assigns props on instance right after calling our constructor
-		// You can't use `this` in a constructor until after the we've called the parent constructor
-		// So, that means, if we need to use `this.props` somewhere, it'll be undefined
-		// between `super` and end of constructor. So, it's safter to just pass props all the time
-    super(props) // Important
     this.state = {
       pokemon: [],
       error: false
     }
-    this.generateError = this.generateError.bind(this)
   }
 
   // Generate a fake error
   generateError() {
-    this.setState({ error: true })
+    this.state.pokemon = true
   }
 
   async componentDidMount() {
@@ -32,7 +24,7 @@ class Pokemon extends Component {
     this.annoyingInterval = setInterval(() => console.log('Annoying Interval'), 300)
     try {
       const { data } = await axios.get('/pokemon')
-      this.setState({ pokemon: data })
+      this.state.pokemon = data
     } catch (error) { console.log(error) }
   }
 
