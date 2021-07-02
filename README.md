@@ -1,3 +1,5 @@
+All credit goes to @b17z for the demo
+
 # React Lifecycle
 
 ## About
