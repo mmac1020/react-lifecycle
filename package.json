@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -w & json-server fakeDB.json --static public"
+    "start": "build & start-server",
+    "build": "webpack -w",
+    "start-server": "json-server fakeDB.json --static public"
   },
   "dependencies": {
     "axios": "^0.21.1",
